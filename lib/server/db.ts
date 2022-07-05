@@ -5,9 +5,6 @@ declare global {
 }
 
 const db = new PrismaClient();
-console.log("======");
-console.log(db);
-console.log("======");
 
 if (process.env.NODE_ENV === "test") global.db = db;
 
